@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/keyicon.svg">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header">
+            <a href= "https://app.aluracursos.com/user/sofiangel1128" target="_blank"><img class="logo" src="./img/alura.svg"></a>
+            <h1 class="title">ENCRIPTADOR DE TEXTO</h1>
+            <a class="header__link__button" href="https://www.instagram.com/ik.ki1128/?hl=es-la"><img class="header__button__logo" src="./img/zorro2.png">
+
+            </a>
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí" autofocus required></textarea>
+                <div class="content_botones">
+                    <span class="left__info">
+                        <img src="./img/!.svg" alt="advertencia" /><span>
+                            Ingresar números podría generar errores al desencriptar
+                        </span>
+                    </span>
+                    <div class="botones">
+                        <button id="buttonEncriptarS" class="button__encriptar">
+                            <ion-icon name="eye-off-sharp" class="eye"></ion-icon>
+                            Encriptar</button>
+                        <button id="buttonDesencriptarS" class="button__desencriptar">
+                            <ion-icon name="eye-sharp"></ion-icon>
+                            Desencriptar</button>
+                    </div>
+                        
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="rightImagen" class="right__imagen" src="./img/4RNk.gif" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="textoFinal" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="textoInfo" class="rigth__info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="buttonCopiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer ">
+        <p class="creador">Desarrollado por Ikkilabs</p>
+        <a href="https://github.com/Ikkipixel" class="usuario">
+            Ikkipixel
+        </a>
+    </footer>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
